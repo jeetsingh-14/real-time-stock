@@ -1,0 +1,48 @@
+2025-04-29 21:42:23,014 - INFO - Connecting to MySQL and reading from 'real_time_predictions'
+2025-04-29 21:42:23,037 - INFO - Uploading 81 records to BigQuery table: stock_predictions.real_time_predictions
+2025-04-29 21:42:26,098 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-04-29 21:42:30,202 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-04-29 21:42:35,141 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-04-29 21:42:35,142 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-04-29 21:42:40,195 - INFO - 81 out of 81 rows loaded.
+2025-04-29 21:42:40,196 - INFO - Successfully uploaded to stock_predictions.real_time_predictions
+2025-04-29 21:42:40,196 - INFO - Connecting to MySQL and reading from 'merged_price_sentiment'
+2025-04-29 21:42:40,243 - INFO - Uploading 3194 records to BigQuery table: stock_predictions.merged_price_sentiment
+2025-04-29 21:42:43,266 - INFO - 3194 out of 3194 rows loaded.
+2025-04-29 21:42:43,266 - INFO - Successfully uploaded to stock_predictions.merged_price_sentiment
+2025-04-29 21:42:43,267 - INFO - Connecting to MySQL and reading from 'combined_sentiment_data'
+2025-04-29 21:42:43,338 - INFO - Uploading 3890 records to BigQuery table: stock_predictions.combined_sentiment_data
+2025-04-29 21:42:46,238 - INFO - 3890 out of 3890 rows loaded.
+2025-04-29 21:42:46,238 - INFO - Successfully uploaded to stock_predictions.combined_sentiment_data
+2025-04-29 22:00:46,673 - INFO - Connecting to MySQL and reading from 'real_time_predictions'
+2025-04-29 22:00:46,695 - INFO - Uploading 81 records to BigQuery table: stock_predictions.real_time_predictions
+2025-04-29 22:00:49,732 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-04-29 22:00:53,781 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-04-29 22:00:58,865 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-04-29 22:00:58,865 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-04-29 22:01:03,375 - INFO - 81 out of 81 rows loaded.
+2025-04-29 22:01:03,375 - INFO - Successfully uploaded to stock_predictions.real_time_predictions
+2025-04-29 22:01:03,375 - INFO - Connecting to MySQL and reading from 'merged_price_sentiment'
+2025-04-29 22:01:03,419 - INFO - Uploading 4791 records to BigQuery table: stock_predictions.merged_price_sentiment
+2025-04-29 22:01:13,589 - INFO - 4791 out of 4791 rows loaded.
+2025-04-29 22:01:13,590 - INFO - Successfully uploaded to stock_predictions.merged_price_sentiment
+2025-04-29 22:01:13,590 - INFO - Connecting to MySQL and reading from 'combined_sentiment_data'
+2025-04-29 22:01:13,653 - INFO - Uploading 3890 records to BigQuery table: stock_predictions.combined_sentiment_data
+2025-04-29 22:01:18,277 - INFO - 3890 out of 3890 rows loaded.
+2025-04-29 22:01:18,277 - INFO - Successfully uploaded to stock_predictions.combined_sentiment_data
+2025-04-29 22:57:19,800 - INFO - Connecting to MySQL and reading from 'real_time_predictions'
+2025-04-29 22:57:19,824 - INFO - Uploading 81 records to BigQuery table: stock_predictions.real_time_predictions
+2025-04-29 22:57:22,862 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-04-29 22:57:26,839 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-04-29 22:57:31,828 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-04-29 22:57:31,828 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-04-29 22:57:35,427 - INFO - 81 out of 81 rows loaded.
+2025-04-29 22:57:35,428 - INFO - Successfully uploaded to stock_predictions.real_time_predictions
+2025-04-29 22:57:35,428 - INFO - Connecting to MySQL and reading from 'merged_price_sentiment'
+2025-04-29 22:57:35,492 - INFO - Uploading 6388 records to BigQuery table: stock_predictions.merged_price_sentiment
+2025-04-29 22:57:39,441 - INFO - 6388 out of 6388 rows loaded.
+2025-04-29 22:57:39,441 - INFO - Successfully uploaded to stock_predictions.merged_price_sentiment
+2025-04-29 22:57:39,441 - INFO - Connecting to MySQL and reading from 'combined_sentiment_data'
+2025-04-29 22:57:39,496 - INFO - Uploading 3890 records to BigQuery table: stock_predictions.combined_sentiment_data
+2025-04-29 22:57:42,162 - INFO - 3890 out of 3890 rows loaded.
+2025-04-29 22:57:42,162 - INFO - Successfully uploaded to stock_predictions.combined_sentiment_data

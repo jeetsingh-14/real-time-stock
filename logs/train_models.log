@@ -1,0 +1,329 @@
+2025-04-29 21:41:31,255 - __main__ - INFO - Starting model training process
+2025-04-29 21:41:31,255 - __main__ - INFO - Connecting to MySQL database
+2025-04-29 21:41:31,283 - __main__ - INFO - Loading training data from merged_price_sentiment table
+2025-04-29 21:41:31,305 - __main__ - INFO - Successfully loaded 3194 records for training
+2025-04-29 21:41:31,314 - __main__ - INFO - Preparing features and target
+2025-04-29 21:41:31,315 - __main__ - INFO - Class distribution: {np.int64(1): 2867, np.int64(0): 156, np.int64(2): 171}
+2025-04-29 21:41:31,317 - __main__ - INFO - Prepared 1916 training and 1278 test samples
+2025-04-29 21:41:31,317 - __main__ - INFO - Training and evaluating models
+2025-04-29 21:41:31,387 - __main__ - INFO - Logistic Regression - Accuracy: 0.6518
+2025-04-29 21:41:31,388 - __main__ - INFO - Logistic Regression - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.12      0.68      0.21        62
+     NEUTRAL       0.97      0.68      0.80      1147
+          UP       0.11      0.22      0.15        69
+
+    accuracy                           0.65      1278
+   macro avg       0.40      0.52      0.38      1278
+weighted avg       0.88      0.65      0.73      1278
+
+2025-04-29 21:41:31,481 - __main__ - INFO - Random Forest - Accuracy: 0.8740
+2025-04-29 21:41:31,482 - __main__ - INFO - Random Forest - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.37      0.68      0.48        62
+     NEUTRAL       0.97      0.90      0.93      1147
+          UP       0.44      0.62      0.51        69
+
+    accuracy                           0.87      1278
+   macro avg       0.59      0.73      0.64      1278
+weighted avg       0.91      0.87      0.89      1278
+
+2025-04-29 21:41:31,736 - __main__ - INFO - XGBoost - Accuracy: 0.9139
+2025-04-29 21:41:31,736 - __main__ - INFO - XGBoost - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.63      0.44      0.51        62
+     NEUTRAL       0.94      0.97      0.95      1147
+          UP       0.56      0.48      0.52        69
+
+    accuracy                           0.91      1278
+   macro avg       0.71      0.63      0.66      1278
+weighted avg       0.91      0.91      0.91      1278
+
+2025-04-29 21:41:31,736 - __main__ - INFO - Best model: XGBoost
+2025-04-29 21:41:31,746 - __main__ - INFO - Best model saved to C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\model\best_model.pkl
+2025-04-29 21:41:31,746 - __main__ - INFO - Training process completed successfully
+2025-04-29 22:32:55,561 - __main__ - INFO - Starting model training process
+2025-04-29 22:32:55,562 - __main__ - INFO - Connecting to MySQL database
+2025-04-29 22:32:55,607 - __main__ - INFO - Loading training data from merged_price_sentiment table
+2025-04-29 22:32:55,654 - __main__ - INFO - Successfully loaded 4791 records for training
+2025-04-29 22:32:55,660 - __main__ - INFO - Preparing features and target
+2025-04-29 22:32:55,661 - __main__ - INFO - Class distribution: {np.int64(1): 4464, np.int64(0): 156, np.int64(2): 171}
+2025-04-29 22:32:55,663 - __main__ - INFO - Prepared 2874 training and 1917 test samples
+2025-04-29 22:32:55,663 - __main__ - INFO - Training and evaluating models
+2025-04-29 22:32:55,773 - __main__ - INFO - Logistic Regression - Accuracy: 0.6651
+2025-04-29 22:32:55,773 - __main__ - INFO - Logistic Regression - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.12      0.56      0.20        62
+     NEUTRAL       0.98      0.68      0.80      1786
+          UP       0.05      0.28      0.09        69
+
+    accuracy                           0.67      1917
+   macro avg       0.38      0.51      0.36      1917
+weighted avg       0.92      0.67      0.76      1917
+
+2025-04-29 22:32:55,940 - __main__ - INFO - Random Forest - Accuracy: 0.8346
+2025-04-29 22:32:55,940 - __main__ - INFO - Random Forest - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.32      0.73      0.45        62
+     NEUTRAL       0.99      0.84      0.91      1786
+          UP       0.22      0.87      0.36        69
+
+    accuracy                           0.83      1917
+   macro avg       0.51      0.81      0.57      1917
+weighted avg       0.94      0.83      0.87      1917
+
+2025-04-29 22:32:56,255 - __main__ - INFO - XGBoost - Accuracy: 0.9228
+2025-04-29 22:32:56,255 - __main__ - INFO - XGBoost - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.29      0.08      0.13        62
+     NEUTRAL       0.94      0.98      0.96      1786
+          UP       0.31      0.13      0.18        69
+
+    accuracy                           0.92      1917
+   macro avg       0.51      0.40      0.42      1917
+weighted avg       0.89      0.92      0.90      1917
+
+2025-04-29 22:32:56,256 - __main__ - INFO - Best model: XGBoost
+2025-04-29 22:32:56,266 - __main__ - INFO - Best model saved to C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\model\best_model.pkl
+2025-04-29 22:32:56,266 - __main__ - INFO - Training process completed successfully
+2025-04-29 22:32:59,913 - __main__ - INFO - Starting model training process
+2025-04-29 22:32:59,913 - __main__ - INFO - Connecting to MySQL database
+2025-04-29 22:32:59,945 - __main__ - INFO - Loading training data from merged_price_sentiment table
+2025-04-29 22:32:59,978 - __main__ - INFO - Successfully loaded 4791 records for training
+2025-04-29 22:32:59,986 - __main__ - INFO - Preparing features and target
+2025-04-29 22:32:59,988 - __main__ - INFO - Class distribution: {np.int64(1): 4464, np.int64(0): 156, np.int64(2): 171}
+2025-04-29 22:32:59,991 - __main__ - INFO - Prepared 2874 training and 1917 test samples
+2025-04-29 22:32:59,991 - __main__ - INFO - Training and evaluating models
+2025-04-29 22:33:00,118 - __main__ - INFO - Logistic Regression - Accuracy: 0.6651
+2025-04-29 22:33:00,118 - __main__ - INFO - Logistic Regression - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.12      0.56      0.20        62
+     NEUTRAL       0.98      0.68      0.80      1786
+          UP       0.05      0.28      0.09        69
+
+    accuracy                           0.67      1917
+   macro avg       0.38      0.51      0.36      1917
+weighted avg       0.92      0.67      0.76      1917
+
+2025-04-29 22:33:00,266 - __main__ - INFO - Random Forest - Accuracy: 0.8346
+2025-04-29 22:33:00,266 - __main__ - INFO - Random Forest - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.32      0.73      0.45        62
+     NEUTRAL       0.99      0.84      0.91      1786
+          UP       0.22      0.87      0.36        69
+
+    accuracy                           0.83      1917
+   macro avg       0.51      0.81      0.57      1917
+weighted avg       0.94      0.83      0.87      1917
+
+2025-04-29 22:33:00,568 - __main__ - INFO - XGBoost - Accuracy: 0.9228
+2025-04-29 22:33:00,568 - __main__ - INFO - XGBoost - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.29      0.08      0.13        62
+     NEUTRAL       0.94      0.98      0.96      1786
+          UP       0.31      0.13      0.18        69
+
+    accuracy                           0.92      1917
+   macro avg       0.51      0.40      0.42      1917
+weighted avg       0.89      0.92      0.90      1917
+
+2025-04-29 22:33:00,568 - __main__ - INFO - Best model: XGBoost
+2025-04-29 22:33:00,578 - __main__ - INFO - Best model saved to C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\model\best_model.pkl
+2025-04-29 22:33:00,578 - __main__ - INFO - Training process completed successfully
+2025-04-29 22:38:58,449 - __main__ - INFO - Starting model training process
+2025-04-29 22:38:58,449 - __main__ - INFO - Connecting to MySQL database
+2025-04-29 22:38:58,476 - __main__ - INFO - Loading training data from merged_price_sentiment table
+2025-04-29 22:38:58,505 - __main__ - INFO - Successfully loaded 4791 records for training
+2025-04-29 22:38:58,511 - __main__ - INFO - Preparing features and target
+2025-04-29 22:38:58,511 - __main__ - INFO - Class distribution: {np.int64(1): 4464, np.int64(0): 156, np.int64(2): 171}
+2025-04-29 22:38:58,513 - __main__ - INFO - Prepared 2874 training and 1917 test samples
+2025-04-29 22:38:58,513 - __main__ - INFO - Training and evaluating models
+2025-04-29 22:38:58,569 - __main__ - INFO - Logistic Regression - Accuracy: 0.6651
+2025-04-29 22:38:58,569 - __main__ - INFO - Logistic Regression - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.12      0.56      0.20        62
+     NEUTRAL       0.98      0.68      0.80      1786
+          UP       0.05      0.28      0.09        69
+
+    accuracy                           0.67      1917
+   macro avg       0.38      0.51      0.36      1917
+weighted avg       0.92      0.67      0.76      1917
+
+2025-04-29 22:38:58,677 - __main__ - INFO - Random Forest - Accuracy: 0.8346
+2025-04-29 22:38:58,677 - __main__ - INFO - Random Forest - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.32      0.73      0.45        62
+     NEUTRAL       0.99      0.84      0.91      1786
+          UP       0.22      0.87      0.36        69
+
+    accuracy                           0.83      1917
+   macro avg       0.51      0.81      0.57      1917
+weighted avg       0.94      0.83      0.87      1917
+
+2025-04-29 22:38:58,907 - __main__ - INFO - XGBoost - Accuracy: 0.9228
+2025-04-29 22:38:58,907 - __main__ - INFO - XGBoost - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.29      0.08      0.13        62
+     NEUTRAL       0.94      0.98      0.96      1786
+          UP       0.31      0.13      0.18        69
+
+    accuracy                           0.92      1917
+   macro avg       0.51      0.40      0.42      1917
+weighted avg       0.89      0.92      0.90      1917
+
+2025-04-29 22:38:58,907 - __main__ - INFO - Best model: XGBoost
+2025-04-29 22:38:58,916 - __main__ - INFO - Best model saved to C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\model\best_model.pkl
+2025-04-29 22:38:58,917 - __main__ - INFO - Training process completed successfully
+2025-04-29 22:54:51,912 - __main__ - INFO - Starting model training process
+2025-04-29 22:54:51,913 - __main__ - INFO - Connecting to MySQL database
+2025-04-29 22:54:51,942 - __main__ - INFO - Loading training data from merged_price_sentiment table
+2025-04-29 22:54:51,979 - __main__ - INFO - Successfully loaded 6388 records for training
+2025-04-29 22:54:51,987 - __main__ - INFO - Preparing features and target
+2025-04-29 22:54:51,988 - __main__ - INFO - Class distribution: {np.int64(1): 6061, np.int64(0): 156, np.int64(2): 171}
+2025-04-29 22:54:51,991 - __main__ - INFO - Prepared 3832 training and 2556 test samples
+2025-04-29 22:54:51,991 - __main__ - INFO - Training and evaluating models
+2025-04-29 22:54:52,069 - __main__ - INFO - Logistic Regression - Accuracy: 0.6146
+2025-04-29 22:54:52,070 - __main__ - INFO - Logistic Regression - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.10      0.60      0.17        62
+     NEUTRAL       0.98      0.62      0.76      2425
+          UP       0.04      0.38      0.07        69
+
+    accuracy                           0.61      2556
+   macro avg       0.37      0.53      0.33      2556
+weighted avg       0.94      0.61      0.73      2556
+
+2025-04-29 22:54:52,191 - __main__ - INFO - Random Forest - Accuracy: 0.8400
+2025-04-29 22:54:52,191 - __main__ - INFO - Random Forest - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.23      0.71      0.35        62
+     NEUTRAL       0.99      0.84      0.91      2425
+          UP       0.19      0.78      0.30        69
+
+    accuracy                           0.84      2556
+   macro avg       0.47      0.78      0.52      2556
+weighted avg       0.95      0.84      0.88      2556
+
+2025-04-29 22:54:52,501 - __main__ - INFO - XGBoost - Accuracy: 0.9441
+2025-04-29 22:54:52,501 - __main__ - INFO - XGBoost - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.10      0.02      0.03        62
+     NEUTRAL       0.95      0.99      0.97      2425
+          UP       0.40      0.12      0.18        69
+
+    accuracy                           0.94      2556
+   macro avg       0.48      0.37      0.39      2556
+weighted avg       0.92      0.94      0.93      2556
+
+2025-04-29 22:54:52,502 - __main__ - INFO - Best model: XGBoost
+2025-04-29 22:54:52,511 - __main__ - INFO - Best model saved to C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\model\best_model.pkl
+2025-04-29 22:54:52,511 - __main__ - INFO - Training process completed successfully
+2025-04-29 23:03:09,177 - __main__ - INFO - Starting model training process
+2025-04-29 23:03:09,178 - __main__ - INFO - Connecting to MySQL database
+2025-04-29 23:03:09,205 - __main__ - INFO - Loading training data from merged_price_sentiment table
+2025-04-29 23:03:09,242 - __main__ - INFO - Successfully loaded 6388 records for training
+2025-04-29 23:03:09,249 - __main__ - INFO - Preparing features and target
+2025-04-29 23:03:09,250 - __main__ - INFO - Class distribution: {np.int64(1): 6061, np.int64(0): 156, np.int64(2): 171}
+2025-04-29 23:03:09,253 - __main__ - INFO - Prepared 3832 training and 2556 test samples
+2025-04-29 23:03:09,253 - __main__ - INFO - Training and evaluating models
+2025-04-29 23:03:09,332 - __main__ - INFO - Logistic Regression - Accuracy: 0.6146
+2025-04-29 23:03:09,332 - __main__ - INFO - Logistic Regression - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.10      0.60      0.17        62
+     NEUTRAL       0.98      0.62      0.76      2425
+          UP       0.04      0.38      0.07        69
+
+    accuracy                           0.61      2556
+   macro avg       0.37      0.53      0.33      2556
+weighted avg       0.94      0.61      0.73      2556
+
+2025-04-29 23:03:09,460 - __main__ - INFO - Random Forest - Accuracy: 0.8400
+2025-04-29 23:03:09,460 - __main__ - INFO - Random Forest - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.23      0.71      0.35        62
+     NEUTRAL       0.99      0.84      0.91      2425
+          UP       0.19      0.78      0.30        69
+
+    accuracy                           0.84      2556
+   macro avg       0.47      0.78      0.52      2556
+weighted avg       0.95      0.84      0.88      2556
+
+2025-04-29 23:03:09,797 - __main__ - INFO - XGBoost - Accuracy: 0.9441
+2025-04-29 23:03:09,798 - __main__ - INFO - XGBoost - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.10      0.02      0.03        62
+     NEUTRAL       0.95      0.99      0.97      2425
+          UP       0.40      0.12      0.18        69
+
+    accuracy                           0.94      2556
+   macro avg       0.48      0.37      0.39      2556
+weighted avg       0.92      0.94      0.93      2556
+
+2025-04-29 23:03:09,798 - __main__ - INFO - Best model: XGBoost
+2025-04-29 23:03:09,807 - __main__ - INFO - Best model saved to C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\model\best_model.pkl
+2025-04-29 23:03:09,807 - __main__ - INFO - Training process completed successfully
+2025-04-29 23:04:24,182 - __main__ - INFO - Starting model training process
+2025-04-29 23:04:24,182 - __main__ - INFO - Connecting to MySQL database
+2025-04-29 23:04:24,208 - __main__ - INFO - Loading training data from merged_price_sentiment table
+2025-04-29 23:04:24,245 - __main__ - INFO - Successfully loaded 6388 records for training
+2025-04-29 23:04:24,253 - __main__ - INFO - Preparing features and target
+2025-04-29 23:04:24,255 - __main__ - INFO - Class distribution: {np.int64(1): 6061, np.int64(0): 156, np.int64(2): 171}
+2025-04-29 23:04:24,257 - __main__ - INFO - Prepared 3832 training and 2556 test samples
+2025-04-29 23:04:24,257 - __main__ - INFO - Training and evaluating models
+2025-04-29 23:04:24,329 - __main__ - INFO - Logistic Regression - Accuracy: 0.6146
+2025-04-29 23:04:24,329 - __main__ - INFO - Logistic Regression - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.10      0.60      0.17        62
+     NEUTRAL       0.98      0.62      0.76      2425
+          UP       0.04      0.38      0.07        69
+
+    accuracy                           0.61      2556
+   macro avg       0.37      0.53      0.33      2556
+weighted avg       0.94      0.61      0.73      2556
+
+2025-04-29 23:04:24,452 - __main__ - INFO - Random Forest - Accuracy: 0.8400
+2025-04-29 23:04:24,452 - __main__ - INFO - Random Forest - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.23      0.71      0.35        62
+     NEUTRAL       0.99      0.84      0.91      2425
+          UP       0.19      0.78      0.30        69
+
+    accuracy                           0.84      2556
+   macro avg       0.47      0.78      0.52      2556
+weighted avg       0.95      0.84      0.88      2556
+
+2025-04-29 23:04:24,709 - __main__ - INFO - XGBoost - Accuracy: 0.9441
+2025-04-29 23:04:24,709 - __main__ - INFO - XGBoost - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.10      0.02      0.03        62
+     NEUTRAL       0.95      0.99      0.97      2425
+          UP       0.40      0.12      0.18        69
+
+    accuracy                           0.94      2556
+   macro avg       0.48      0.37      0.39      2556
+weighted avg       0.92      0.94      0.93      2556
+
+2025-04-29 23:04:24,709 - __main__ - INFO - Best model: XGBoost
+2025-04-29 23:04:24,718 - __main__ - INFO - Best model saved to C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\model\best_model.pkl
+2025-04-29 23:04:24,718 - __main__ - INFO - Training process completed successfully

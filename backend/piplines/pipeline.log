@@ -1,0 +1,400 @@
+2025-04-29 21:58:35,825 - __main__ - INFO - Starting pipeline execution
+2025-04-29 21:58:35,825 - __main__ - INFO - Step 1: Merging sentiment with price data
+2025-04-29 21:58:35,825 - __main__ - INFO - Starting merge_sentiment_with_price.py
+2025-04-29 21:58:35,825 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\piplines\merge_sentiment_with_price.py
+2025-04-29 21:58:50,193 - __main__ - INFO - Output from merge_sentiment_with_price.py:
+YF.download() has changed argument auto_adjust default to True
+
+2025-04-29 21:58:50,194 - __main__ - WARNING - Warnings from merge_sentiment_with_price.py:
+2025-04-29 21:58:37,645 - __main__ - INFO - Starting sentiment and price data merging process
+2025-04-29 21:58:37,645 - __main__ - INFO - Loading sentiment data from database
+2025-04-29 21:58:37,645 - stockmarket_analysis.backend.utils.data_fetcher - INFO - Connecting to database...
+2025-04-29 21:58:37,665 - stockmarket_analysis.backend.utils.data_fetcher - INFO - Database connection established successfully
+2025-04-29 21:58:37,716 - __main__ - INFO - Loaded 2634 sentiment records
+2025-04-29 21:58:37,716 - __main__ - INFO - Processing ticker 1/8: TSLA
+2025-04-29 21:58:37,716 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for TSLA (attempt 1)
+
+1 Failed download:
+['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 21:58:39,319 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for TSLA
+2025-04-29 21:58:39,319 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for TSLA
+2025-04-29 21:58:39,543 - __main__ - INFO - Successfully merged 305 records for TSLA
+2025-04-29 21:58:39,543 - __main__ - INFO - Processing ticker 2/8: AAPL
+2025-04-29 21:58:39,543 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for AAPL (attempt 1)
+
+1 Failed download:
+['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 21:58:40,706 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for AAPL
+2025-04-29 21:58:40,706 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for AAPL
+2025-04-29 21:58:40,928 - __main__ - INFO - Successfully merged 331 records for AAPL
+2025-04-29 21:58:40,928 - __main__ - INFO - Processing ticker 3/8: AMZN
+2025-04-29 21:58:40,928 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for AMZN (attempt 1)
+
+1 Failed download:
+['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 21:58:41,973 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for AMZN
+2025-04-29 21:58:41,973 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for AMZN
+2025-04-29 21:58:42,199 - __main__ - INFO - Successfully merged 198 records for AMZN
+2025-04-29 21:58:42,200 - __main__ - INFO - Processing ticker 4/8: GOOGL
+2025-04-29 21:58:42,200 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for GOOGL (attempt 1)
+
+1 Failed download:
+['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 21:58:43,251 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for GOOGL
+2025-04-29 21:58:43,251 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for GOOGL
+2025-04-29 21:58:43,474 - __main__ - INFO - Successfully merged 273 records for GOOGL
+2025-04-29 21:58:43,474 - __main__ - INFO - Processing ticker 5/8: GTLB
+2025-04-29 21:58:43,474 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for GTLB (attempt 1)
+
+1 Failed download:
+['GTLB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 21:58:45,148 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for GTLB
+2025-04-29 21:58:45,148 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for GTLB
+2025-04-29 21:58:45,370 - __main__ - INFO - Successfully merged 10 records for GTLB
+2025-04-29 21:58:45,370 - __main__ - INFO - Processing ticker 6/8: AMD
+2025-04-29 21:58:45,370 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for AMD (attempt 1)
+
+1 Failed download:
+['AMD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 21:58:46,164 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for AMD
+2025-04-29 21:58:46,164 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for AMD
+2025-04-29 21:58:46,392 - __main__ - INFO - Successfully merged 163 records for AMD
+2025-04-29 21:58:46,392 - __main__ - INFO - Processing ticker 7/8: NVDA
+2025-04-29 21:58:46,393 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for NVDA (attempt 1)
+
+1 Failed download:
+['NVDA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 21:58:47,082 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for NVDA
+2025-04-29 21:58:47,082 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for NVDA
+2025-04-29 21:58:47,300 - __main__ - INFO - Successfully merged 192 records for NVDA
+2025-04-29 21:58:47,300 - __main__ - INFO - Processing ticker 8/8: AAL
+2025-04-29 21:58:47,301 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for AAL (attempt 1)
+
+1 Failed download:
+['AAL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 21:58:49,766 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for AAL
+2025-04-29 21:58:49,766 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for AAL
+2025-04-29 21:58:49,972 - __main__ - INFO - Successfully merged 125 records for AAL
+2025-04-29 21:58:49,972 - stockmarket_analysis.backend.utils.data_fetcher - INFO - Connecting to database...
+2025-04-29 21:58:49,972 - stockmarket_analysis.backend.utils.data_fetcher - INFO - Database connection established successfully
+2025-04-29 21:58:50,007 - __main__ - INFO - Successfully saved 1597 records to database
+2025-04-29 21:58:50,007 - __main__ - INFO - Successfully merged and saved 1597 records from 8 tickers.
+
+2025-04-29 21:58:50,196 - __main__ - INFO - Successfully completed merge_sentiment_with_price.py
+2025-04-29 21:58:50,196 - __main__ - INFO - Step 2: Training models
+2025-04-29 21:58:50,196 - __main__ - INFO - Starting train_models.py
+2025-04-29 21:58:50,196 - __main__ - ERROR - Script not found: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\piplines\train_models.py
+2025-04-29 21:58:50,196 - __main__ - WARNING - Training step failed, but continuing with pipeline
+2025-04-29 21:58:50,196 - __main__ - INFO - Step 3: Making real-time predictions
+2025-04-29 21:58:50,196 - __main__ - INFO - Starting predict_real_time.py
+2025-04-29 21:58:50,196 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\piplines\predict_real_time.py
+2025-04-29 22:00:45,429 - __main__ - INFO - Output from predict_real_time.py:
+[YFinance] Downloading TSLA...
+YF.download() has changed argument auto_adjust default to True
+[YFinance] No data for TSLA, trying Twelve Data...
+[TwelveData] Downloading TSLA...
+[TwelveData] Error fetching data for TSLA: You have run out of API credits for the current minute. 9 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing
+Sleeping for 60 seconds due to API limit...
+Warning: No data for TSLA
+[YFinance] Downloading AAPL...
+[YFinance] No data for AAPL, trying Twelve Data...
+[TwelveData] Downloading AAPL...
+[TwelveData] Columns returned for AAPL: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for AAPL
+[YFinance] Downloading AMZN...
+[YFinance] No data for AMZN, trying Twelve Data...
+[TwelveData] Downloading AMZN...
+[TwelveData] Columns returned for AMZN: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for AMZN
+[YFinance] Downloading GOOGL...
+[YFinance] No data for GOOGL, trying Twelve Data...
+[TwelveData] Downloading GOOGL...
+[TwelveData] Columns returned for GOOGL: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for GOOGL
+[YFinance] Downloading GTLB...
+[YFinance] No data for GTLB, trying Twelve Data...
+[TwelveData] Downloading GTLB...
+[TwelveData] Columns returned for GTLB: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for GTLB
+[YFinance] Downloading AMD...
+[YFinance] No data for AMD, trying Twelve Data...
+[TwelveData] Downloading AMD...
+[TwelveData] Columns returned for AMD: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for AMD
+[YFinance] Downloading NVDA...
+[YFinance] No data for NVDA, trying Twelve Data...
+[TwelveData] Downloading NVDA...
+[TwelveData] Columns returned for NVDA: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for NVDA
+[YFinance] Downloading AAL...
+[YFinance] No data for AAL, trying Twelve Data...
+[TwelveData] Downloading AAL...
+[TwelveData] Columns returned for AAL: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for AAL
+No data collected. Exiting.
+
+2025-04-29 22:00:45,429 - __main__ - WARNING - Warnings from predict_real_time.py:
+
+1 Failed download:
+['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['GTLB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['AMD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['NVDA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['AAL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+2025-04-29 22:00:45,429 - __main__ - INFO - Successfully completed predict_real_time.py
+2025-04-29 22:00:45,429 - __main__ - INFO - Step 4: Uploading tables to BigQuery
+2025-04-29 22:00:45,429 - __main__ - INFO - Starting save_to_bigquery.py
+2025-04-29 22:00:45,430 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\piplines\save_to_bigquery.py
+2025-04-29 22:01:18,459 - __main__ - INFO - Output from save_to_bigquery.py:
+[0m
+2025-04-29 22:01:18,460 - __main__ - WARNING - Warnings from save_to_bigquery.py:
+2025-04-29 22:00:46,673 - INFO - Connecting to MySQL and reading from 'real_time_predictions'
+2025-04-29 22:00:46,695 - INFO - Uploading 81 records to BigQuery table: stock_predictions.real_time_predictions
+2025-04-29 22:00:49,732 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-04-29 22:00:53,781 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-04-29 22:00:58,865 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-04-29 22:00:58,865 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+
+  0%|          | 0/1 [00:00<?, ?it/s]2025-04-29 22:01:03,375 - INFO - 
+81 out of 81 rows loaded.
+
+100%|██████████| 1/1 [00:00<00:00, 3307.81it/s]
+2025-04-29 22:01:03,375 - INFO - Successfully uploaded to stock_predictions.real_time_predictions
+2025-04-29 22:01:03,375 - INFO - Connecting to MySQL and reading from 'merged_price_sentiment'
+2025-04-29 22:01:03,419 - INFO - Uploading 4791 records to BigQuery table: stock_predictions.merged_price_sentiment
+
+  0%|          | 0/1 [00:00<?, ?it/s]2025-04-29 22:01:13,589 - INFO - 
+4791 out of 4791 rows loaded.
+
+100%|██████████| 1/1 [00:00<00:00, 4378.19it/s]
+2025-04-29 22:01:13,590 - INFO - Successfully uploaded to stock_predictions.merged_price_sentiment
+2025-04-29 22:01:13,590 - INFO - Connecting to MySQL and reading from 'combined_sentiment_data'
+2025-04-29 22:01:13,653 - INFO - Uploading 3890 records to BigQuery table: stock_predictions.combined_sentiment_data
+
+  0%|          | 0/1 [00:00<?, ?it/s]2025-04-29 22:01:18,277 - INFO - 
+3890 out of 3890 rows loaded.
+
+100%|██████████| 1/1 [00:00<00:00, 9039.45it/s]
+2025-04-29 22:01:18,277 - INFO - Successfully uploaded to stock_predictions.combined_sentiment_data
+
+2025-04-29 22:01:18,460 - __main__ - INFO - Successfully completed save_to_bigquery.py
+2025-04-29 22:01:18,460 - __main__ - WARNING - Pipeline completed with some errors
+2025-04-29 22:01:18,460 - __main__ - INFO - Pipeline execution finished
+2025-04-29 22:54:40,827 - __main__ - INFO - Starting pipeline execution
+2025-04-29 22:54:40,827 - __main__ - INFO - Step 1: Merging sentiment with price data
+2025-04-29 22:54:40,827 - __main__ - INFO - Starting merge_sentiment_with_price.py
+2025-04-29 22:54:40,827 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\piplines\merge_sentiment_with_price.py
+2025-04-29 22:54:50,583 - __main__ - INFO - Output from merge_sentiment_with_price.py:
+YF.download() has changed argument auto_adjust default to True
+
+2025-04-29 22:54:50,583 - __main__ - WARNING - Warnings from merge_sentiment_with_price.py:
+2025-04-29 22:54:42,365 - __main__ - INFO - Starting sentiment and price data merging process
+2025-04-29 22:54:42,366 - __main__ - INFO - Loading sentiment data from database
+2025-04-29 22:54:42,366 - stockmarket_analysis.backend.utils.data_fetcher - INFO - Connecting to database...
+2025-04-29 22:54:42,375 - stockmarket_analysis.backend.utils.data_fetcher - INFO - Database connection established successfully
+2025-04-29 22:54:42,406 - __main__ - INFO - Loaded 2634 sentiment records
+2025-04-29 22:54:42,406 - __main__ - INFO - Processing ticker 1/8: TSLA
+2025-04-29 22:54:42,406 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for TSLA (attempt 1)
+
+1 Failed download:
+['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 22:54:43,673 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for TSLA
+2025-04-29 22:54:43,673 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for TSLA
+2025-04-29 22:54:43,879 - __main__ - INFO - Successfully merged 305 records for TSLA
+2025-04-29 22:54:43,879 - __main__ - INFO - Processing ticker 2/8: AAPL
+2025-04-29 22:54:43,879 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for AAPL (attempt 1)
+
+1 Failed download:
+['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 22:54:44,592 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for AAPL
+2025-04-29 22:54:44,592 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for AAPL
+2025-04-29 22:54:44,791 - __main__ - INFO - Successfully merged 331 records for AAPL
+2025-04-29 22:54:44,791 - __main__ - INFO - Processing ticker 3/8: AMZN
+2025-04-29 22:54:44,791 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for AMZN (attempt 1)
+
+1 Failed download:
+['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 22:54:45,861 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for AMZN
+2025-04-29 22:54:45,861 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for AMZN
+2025-04-29 22:54:46,063 - __main__ - INFO - Successfully merged 198 records for AMZN
+2025-04-29 22:54:46,063 - __main__ - INFO - Processing ticker 4/8: GOOGL
+2025-04-29 22:54:46,064 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for GOOGL (attempt 1)
+
+1 Failed download:
+['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 22:54:46,710 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for GOOGL
+2025-04-29 22:54:46,710 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for GOOGL
+2025-04-29 22:54:46,910 - __main__ - INFO - Successfully merged 273 records for GOOGL
+2025-04-29 22:54:46,910 - __main__ - INFO - Processing ticker 5/8: GTLB
+2025-04-29 22:54:46,910 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for GTLB (attempt 1)
+
+1 Failed download:
+['GTLB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 22:54:47,581 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for GTLB
+2025-04-29 22:54:47,581 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for GTLB
+2025-04-29 22:54:47,780 - __main__ - INFO - Successfully merged 10 records for GTLB
+2025-04-29 22:54:47,780 - __main__ - INFO - Processing ticker 6/8: AMD
+2025-04-29 22:54:47,780 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for AMD (attempt 1)
+
+1 Failed download:
+['AMD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 22:54:48,459 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for AMD
+2025-04-29 22:54:48,459 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for AMD
+2025-04-29 22:54:48,655 - __main__ - INFO - Successfully merged 163 records for AMD
+2025-04-29 22:54:48,655 - __main__ - INFO - Processing ticker 7/8: NVDA
+2025-04-29 22:54:48,655 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for NVDA (attempt 1)
+
+1 Failed download:
+['NVDA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 22:54:49,299 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for NVDA
+2025-04-29 22:54:49,299 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for NVDA
+2025-04-29 22:54:49,513 - __main__ - INFO - Successfully merged 192 records for NVDA
+2025-04-29 22:54:49,513 - __main__ - INFO - Processing ticker 8/8: AAL
+2025-04-29 22:54:49,513 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [YFinance] Fetching stock data for AAL (attempt 1)
+
+1 Failed download:
+['AAL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-29 22:54:50,184 - stockmarket_analysis.backend.utils.data_fetcher - WARNING - [YFinance] No data returned for AAL
+2025-04-29 22:54:50,184 - stockmarket_analysis.backend.utils.data_fetcher - INFO - [TwelveData] Fallback: Fetching stock data for AAL
+2025-04-29 22:54:50,386 - __main__ - INFO - Successfully merged 125 records for AAL
+2025-04-29 22:54:50,387 - stockmarket_analysis.backend.utils.data_fetcher - INFO - Connecting to database...
+2025-04-29 22:54:50,387 - stockmarket_analysis.backend.utils.data_fetcher - INFO - Database connection established successfully
+2025-04-29 22:54:50,410 - __main__ - INFO - Successfully saved 1597 records to database
+2025-04-29 22:54:50,410 - __main__ - INFO - Successfully merged and saved 1597 records from 8 tickers.
+
+2025-04-29 22:54:50,586 - __main__ - INFO - Successfully completed merge_sentiment_with_price.py
+2025-04-29 22:54:50,586 - __main__ - INFO - Step 2: Training models
+2025-04-29 22:54:50,586 - __main__ - INFO - Starting train_models.py
+2025-04-29 22:54:50,586 - __main__ - ERROR - Script not found: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\piplines\train_models.py
+2025-04-29 22:54:50,586 - __main__ - WARNING - Training step failed, but continuing with pipeline
+2025-04-29 22:54:50,586 - __main__ - INFO - Step 3: Making real-time predictions
+2025-04-29 22:54:50,586 - __main__ - INFO - Starting predict_real_time.py
+2025-04-29 22:54:50,586 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\piplines\predict_real_time.py
+2025-04-29 22:57:18,549 - __main__ - INFO - Output from predict_real_time.py:
+[YFinance] Downloading TSLA...
+YF.download() has changed argument auto_adjust default to True
+[YFinance] No data for TSLA, trying Twelve Data...
+[TwelveData] Downloading TSLA...
+[TwelveData] Error fetching data for TSLA: You have run out of API credits for the current minute. 9 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing
+Sleeping for 30 seconds due to API limit...
+Warning: No data for TSLA
+[YFinance] Downloading AAPL...
+[YFinance] No data for AAPL, trying Twelve Data...
+[TwelveData] Downloading AAPL...
+[TwelveData] Columns returned for AAPL: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for AAPL
+[YFinance] Downloading AMZN...
+[YFinance] No data for AMZN, trying Twelve Data...
+[TwelveData] Downloading AMZN...
+[TwelveData] Columns returned for AMZN: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for AMZN
+[YFinance] Downloading GOOGL...
+[YFinance] No data for GOOGL, trying Twelve Data...
+[TwelveData] Downloading GOOGL...
+[TwelveData] Columns returned for GOOGL: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for GOOGL
+[YFinance] Downloading GTLB...
+[YFinance] No data for GTLB, trying Twelve Data...
+[TwelveData] Downloading GTLB...
+[TwelveData] Columns returned for GTLB: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for GTLB
+[YFinance] Downloading AMD...
+[YFinance] No data for AMD, trying Twelve Data...
+[TwelveData] Downloading AMD...
+[TwelveData] Columns returned for AMD: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for AMD
+[YFinance] Downloading NVDA...
+[YFinance] No data for NVDA, trying Twelve Data...
+[TwelveData] Downloading NVDA...
+[TwelveData] Columns returned for NVDA: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for NVDA
+[YFinance] Downloading AAL...
+[YFinance] No data for AAL, trying Twelve Data...
+[TwelveData] Downloading AAL...
+[TwelveData] Columns returned for AAL: ['open', 'high', 'low', 'close', 'volume']
+Warning: No close column for AAL
+No data collected. Exiting.
+
+2025-04-29 22:57:18,550 - __main__ - WARNING - Warnings from predict_real_time.py:
+
+1 Failed download:
+['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['GTLB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['AMD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['NVDA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+1 Failed download:
+['AAL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+
+2025-04-29 22:57:18,550 - __main__ - INFO - Successfully completed predict_real_time.py
+2025-04-29 22:57:18,550 - __main__ - INFO - Step 4: Uploading tables to BigQuery
+2025-04-29 22:57:18,550 - __main__ - INFO - Starting save_to_bigquery.py
+2025-04-29 22:57:18,550 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\piplines\save_to_bigquery.py
+2025-04-29 22:57:42,353 - __main__ - INFO - Output from save_to_bigquery.py:
+[0m
+2025-04-29 22:57:42,353 - __main__ - WARNING - Warnings from save_to_bigquery.py:
+2025-04-29 22:57:19,800 - INFO - Connecting to MySQL and reading from 'real_time_predictions'
+2025-04-29 22:57:19,824 - INFO - Uploading 81 records to BigQuery table: stock_predictions.real_time_predictions
+2025-04-29 22:57:22,862 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-04-29 22:57:26,839 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-04-29 22:57:31,828 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-04-29 22:57:31,828 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+
+  0%|          | 0/1 [00:00<?, ?it/s]2025-04-29 22:57:35,427 - INFO - 
+81 out of 81 rows loaded.
+
+100%|██████████| 1/1 [00:00<00:00, 8848.74it/s]
+2025-04-29 22:57:35,428 - INFO - Successfully uploaded to stock_predictions.real_time_predictions
+2025-04-29 22:57:35,428 - INFO - Connecting to MySQL and reading from 'merged_price_sentiment'
+2025-04-29 22:57:35,492 - INFO - Uploading 6388 records to BigQuery table: stock_predictions.merged_price_sentiment
+
+  0%|          | 0/1 [00:00<?, ?it/s]2025-04-29 22:57:39,441 - INFO - 
+6388 out of 6388 rows loaded.
+
+100%|██████████| 1/1 [00:00<00:00, 8176.03it/s]
+2025-04-29 22:57:39,441 - INFO - Successfully uploaded to stock_predictions.merged_price_sentiment
+2025-04-29 22:57:39,441 - INFO - Connecting to MySQL and reading from 'combined_sentiment_data'
+2025-04-29 22:57:39,496 - INFO - Uploading 3890 records to BigQuery table: stock_predictions.combined_sentiment_data
+
+  0%|          | 0/1 [00:00<?, ?it/s]2025-04-29 22:57:42,162 - INFO - 
+3890 out of 3890 rows loaded.
+
+100%|██████████| 1/1 [00:00<00:00, 7049.25it/s]
+2025-04-29 22:57:42,162 - INFO - Successfully uploaded to stock_predictions.combined_sentiment_data
+
+2025-04-29 22:57:42,353 - __main__ - INFO - Successfully completed save_to_bigquery.py
+2025-04-29 22:57:42,353 - __main__ - WARNING - Pipeline completed with some errors
+2025-04-29 22:57:42,353 - __main__ - INFO - Pipeline execution finished

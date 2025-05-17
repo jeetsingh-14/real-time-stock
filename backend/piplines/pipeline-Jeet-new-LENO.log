@@ -1,0 +1,4 @@
+2025-04-29 23:24:18,234 - __main__ - INFO - Starting pipeline execution
+2025-04-29 23:24:18,234 - __main__ - INFO - Step 1: Merging sentiment with price data
+2025-04-29 23:24:18,234 - __main__ - INFO - Starting merge_sentiment_with_price.py
+2025-04-29 23:24:18,234 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\piplines\merge_sentiment_with_price.py

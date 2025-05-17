@@ -1,0 +1,90 @@
+C:\Users\jeets\AppData\Local\Microsoft\WindowsApps\python3.13.exe "C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\backend\main.py"
+2025-04-29 00:14:19,055 - __main__ - INFO - Starting pipeline execution
+2025-04-29 00:14:19,055 - __main__ - INFO - Step 1: Merging sentiment with price data
+2025-04-29 00:14:19,055 - __main__ - INFO - Starting merge_sentiment_with_price.py
+2025-04-29 00:14:19,055 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\backend\merge_sentiment_with_price.py
+2025-04-29 00:14:20,482 - __main__ - WARNING - Warnings from merge_sentiment_with_price.py:
+2025-04-29 00:14:20,301 - __main__ - INFO - Starting sentiment and price data merging process
+2025-04-29 00:14:20,301 - __main__ - INFO - Loading sentiment data from database
+2025-04-29 00:14:20,301 - backend.data_fetcher - INFO - Connecting to database...
+2025-04-29 00:14:20,310 - backend.data_fetcher - INFO - Database connection established successfully
+2025-04-29 00:14:20,315 - __main__ - INFO - Loaded 0 sentiment records
+2025-04-29 00:14:20,315 - __main__ - ERROR - No sentiment data available. Exiting.
+
+2025-04-29 00:14:20,482 - __main__ - INFO - Successfully completed merge_sentiment_with_price.py
+2025-04-29 00:14:20,482 - __main__ - INFO - Step 2: Training models
+2025-04-29 00:14:20,482 - __main__ - INFO - Starting train_models.py
+2025-04-29 00:14:20,483 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\backend\train_models.py
+2025-04-29 00:14:22,474 - __main__ - WARNING - Warnings from train_models.py:
+2025-04-29 00:14:21,847 - __main__ - INFO - Starting model training process
+2025-04-29 00:14:21,847 - __main__ - INFO - Connecting to MySQL database
+2025-04-29 00:14:21,878 - __main__ - INFO - Loading training data from merged_price_sentiment table
+2025-04-29 00:14:21,884 - __main__ - INFO - Successfully loaded 267 records for training
+2025-04-29 00:14:21,886 - __main__ - INFO - Preparing features and target
+2025-04-29 00:14:21,886 - __main__ - INFO - Class distribution: {np.int64(0): 48, np.int64(2): 56, np.int64(1): 163}
+2025-04-29 00:14:21,887 - __main__ - INFO - Prepared 160 training and 107 test samples
+2025-04-29 00:14:21,887 - __main__ - INFO - Training and evaluating models
+2025-04-29 00:14:21,903 - __main__ - INFO - Logistic Regression - Accuracy: 0.6262
+2025-04-29 00:14:21,903 - __main__ - INFO - Logistic Regression - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.53      0.42      0.47        19
+     NEUTRAL       0.72      0.88      0.79        65
+          UP       0.15      0.09      0.11        23
+
+    accuracy                           0.63       107
+   macro avg       0.47      0.46      0.46       107
+weighted avg       0.57      0.63      0.59       107
+
+2025-04-29 00:14:21,963 - __main__ - INFO - Random Forest - Accuracy: 0.7383
+2025-04-29 00:14:21,963 - __main__ - INFO - Random Forest - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.53      0.42      0.47        19
+     NEUTRAL       0.86      0.92      0.89        65
+          UP       0.50      0.48      0.49        23
+
+    accuracy                           0.74       107
+   macro avg       0.63      0.61      0.62       107
+weighted avg       0.72      0.74      0.73       107
+
+2025-04-29 00:14:22,194 - __main__ - INFO - XGBoost - Accuracy: 0.7383
+2025-04-29 00:14:22,194 - __main__ - INFO - XGBoost - Report:
+              precision    recall  f1-score   support
+
+        DOWN       0.50      0.42      0.46        19
+     NEUTRAL       0.86      0.94      0.90        65
+          UP       0.50      0.43      0.47        23
+
+    accuracy                           0.74       107
+   macro avg       0.62      0.60      0.61       107
+weighted avg       0.72      0.74      0.73       107
+
+2025-04-29 00:14:22,194 - __main__ - INFO - Best model: Random Forest
+2025-04-29 00:14:22,215 - __main__ - INFO - Best model saved to best_model.pkl
+2025-04-29 00:14:22,215 - __main__ - INFO - Training process completed successfully
+
+2025-04-29 00:14:22,474 - __main__ - INFO - Successfully completed train_models.py
+2025-04-29 00:14:22,474 - __main__ - INFO - Step 3: Making real-time predictions
+2025-04-29 00:14:22,475 - __main__ - INFO - Starting predict_real_time.py
+2025-04-29 00:14:22,475 - __main__ - INFO - Running script: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\backend\predict_real_time.py
+Exception in thread Thread-5 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1612, in _readerthread
+    buffer.append(fh.read())
+                  ~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 299: character maps to <undefined>
+2025-04-29 00:14:25,282 - __main__ - INFO - Successfully completed predict_real_time.py
+2025-04-29 00:14:25,282 - __main__ - INFO - Pipeline completed successfully
+2025-04-29 00:14:25,283 - __main__ - INFO - Pipeline execution finished
+
+Process finished with exit code 0

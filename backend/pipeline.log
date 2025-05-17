@@ -1,0 +1,21 @@
+2025-04-29 21:24:43,902 - __main__ - INFO - Starting pipeline execution
+2025-04-29 21:24:43,902 - __main__ - INFO - Step 1: Merging sentiment with price data
+2025-04-29 21:24:43,902 - __main__ - INFO - Starting merge_sentiment_with_price.py
+2025-04-29 21:24:43,902 - __main__ - ERROR - Script not found: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\merge_sentiment_with_price.py
+2025-04-29 21:24:43,902 - __main__ - WARNING - Merge step failed, but continuing with pipeline
+2025-04-29 21:24:43,902 - __main__ - INFO - Step 2: Training models
+2025-04-29 21:24:43,902 - __main__ - INFO - Starting train_models.py
+2025-04-29 21:24:43,903 - __main__ - ERROR - Script not found: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\train_models.py
+2025-04-29 21:24:43,903 - __main__ - WARNING - Training step failed, but continuing with pipeline
+2025-04-29 21:24:43,903 - __main__ - INFO - Step 3: Making real-time predictions
+2025-04-29 21:24:43,903 - __main__ - INFO - Starting predict_real_time.py
+2025-04-29 21:24:43,903 - __main__ - ERROR - Script not found: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\predict_real_time.py
+2025-04-29 21:24:43,903 - __main__ - WARNING - Backend predict_real_time.py failed, trying root directory version
+2025-04-29 21:24:43,903 - __main__ - ERROR - No predict_real_time.py found in root directory
+2025-04-29 21:24:43,903 - __main__ - WARNING - Prediction step failed
+2025-04-29 21:24:43,903 - __main__ - INFO - Step 4: Uploading tables to BigQuery
+2025-04-29 21:24:43,903 - __main__ - INFO - Starting save_to_bigquery.py
+2025-04-29 21:24:43,903 - __main__ - ERROR - Script not found: C:\Users\jeets\OneDrive\Desktop\Jeet File\Projects\Real time stock market\pythonProject1\stockmarket_analysis\backend\save_to_bigquery.py
+2025-04-29 21:24:43,903 - __main__ - WARNING - BigQuery upload failed
+2025-04-29 21:24:43,903 - __main__ - WARNING - Pipeline completed with some errors
+2025-04-29 21:24:43,903 - __main__ - INFO - Pipeline execution finished

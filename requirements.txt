@@ -1,0 +1,28 @@
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.23.0
+streamlit>=1.22.0
+sqlalchemy>=1.4.0
+pymysql>=1.0.2
+mysql-connector-python>=8.0.32
+
+# Data fetching and APIs
+yfinance>=0.2.0
+twelvedata>=1.2.0
+
+# Machine Learning
+scikit-learn>=1.2.2
+xgboost>=1.7.0
+joblib>=1.2.0
+
+# Visualization
+plotly>=5.13.0
+matplotlib>=3.7.1
+wordcloud>=1.8.2
+pillow>=9.4.0
+
+# Data processing
+python-dateutil>=2.8.2
+
+# Utilities
+pathlib>=1.0.1
